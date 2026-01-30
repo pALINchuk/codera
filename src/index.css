@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-orangeColor: #FFB96A;
+  --color-blueColor: #003D99;
+  --color-bgColor: #FFFAF5;
+  --color-lightBlueTextColor: #E8EBFF;
+  --color-blackColor: #242424;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /*margin: 0;*/
+  /*padding: 0;*/
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Outfit', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #FFFAF5;
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  /*display: block;*/
+  /*max-width: 100%;*/
+}
+
+input,
+button,
+textarea,
+select {
+  /*font: inherit;*/
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  /*color: inherit;*/
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+#root {
+  /*max-width: 1280px;*/
+  margin: 0 auto;
+  /*padding: 2rem;*/
+}
+
+.clip-pentagon {
+  clip-path: polygon(90% 30%, 96% 45%, 93% 65%, 11% 65%, 8% 40%);
+}
