@@ -64,6 +64,7 @@ const ServiceCard = ({title, content}: ServiceCardProps) => {
                   lg:hidden
                   mt-6 text-xl underline
                   text-orangeColor
+                  text-start
                 "
             >
                 click to learn more...

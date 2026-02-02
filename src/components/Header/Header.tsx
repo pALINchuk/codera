@@ -57,7 +57,7 @@ const Header = () => {
                             ))
                         }
                     </nav>
-                    <Button text='Get in touch'/>
+                    <Button text='Get In Touch'/>
                 </div>
 
                 {/*mobile burger menu*/}
