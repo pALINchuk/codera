@@ -60,7 +60,7 @@ const Footer = () => {
     return (
         <footer className="w-full bg-blueColor pb-16 text-lightBlueTextColor px-8 md:px-16 xl:px-0">
             <div className="max-w-[1280px] mx-auto">
-                <div className="flex flex-col items-center justify-center md:items-start md:justify-between md:flex-row py-5 border-b border-t border-lightBlueTextColor w-full">
+                <div className="flex flex-col items-center justify-center md:items-start md:justify-between md:flex-row py-5 border-b border-lightBlueTextColor w-full">
                     <div className="flex flex-col gap-3">
                         <h3
                             className="text-lightBlueTextColor text-3xl underline font-semibold"
