@@ -1,18 +1,18 @@
+import HeroSectionDefault from "@/components/HeroSectionDefault";
+import CaseStudies from "@/components/Cases/CaseStudies";
 
-
+const content = {
+    title: 'Case studies',
+    text: 'Our awesome team of engineers, designers, QAs and PMs can take on end-to-end projects or jump in to collaborate and complement your team.  Together, we design and build digital products, apps, and websites that will impress your users. Take a look at some of our success stories.',
+    button: 'Check Results'
+}
 
 const Cases = () => {
     return (
-        <section className="relative mb-40 max-w-[1280px] mx-auto px-8 md:px-16 xl:px-0">
-            <div className="flex flex-col items-center justify-center gap-3">
-                <h1
-                    className="text-blueColor text-center font-semibold text-4xl lg:text-5xl mb-4 lg:mb-8"
-
-                >
-                    cases
-                </h1>
-            </div>
-        </section>
+        <div>
+            <HeroSectionDefault {...content}/>
+            <CaseStudies/>
+        </div>
     )
 }
 

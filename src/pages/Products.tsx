@@ -1,21 +1,18 @@
-import HeroSectionProducts from "@/components/Products/HeroSectionProducts";
+import HeroSectionDefault from "@/components/HeroSectionDefault";
 import ConceptToReality from "@/components/Products/ConceptToReality";
 import ContactSection from "@/components/Home/ContactSection";
 
+const content = {
+    title: 'Let’s turn your idea\n' +
+        'into a product',
+    text: 'At Codera we help startup founders turn bold ideas into powerful MVP or complete SaaS products. We develop solutions that scale with your business. Focus on growing your vision - we’ll handle the tech.',
+    button: 'Get Started Today'
+}
+
 const Products = () => {
     return (
-        // <section className="relative mb-40 max-w-[1280px] mx-auto px-8 md:px-16 xl:px-0">
-        //     <div className="flex flex-col items-center justify-center gap-3">
-        //         <h1
-        //             className="text-blueColor text-center font-semibold text-4xl lg:text-5xl mb-4 lg:mb-8"
-        //
-        //         >
-        //             products
-        //         </h1>
-        //     </div>
-        // </section>
         <div>
-            <HeroSectionProducts/>
+            <HeroSectionDefault {...content}/>
             <ConceptToReality/>
             <ContactSection/>
         </div>

@@ -1,6 +1,13 @@
 import homeArrow from "@/assets/home_arrow.svg";
 
-const HeroSectionProducts = () => {
+interface HeroSectionProductsProps {
+    title: string,
+    text: string,
+    button: string
+}
+
+const HeroSectionDefault = ({title, text, button}: HeroSectionProductsProps) => {
+
     return (
         <section className="relative mb-40 max-w-[1280px] mx-auto px-8 md:px-16 xl:px-0">
             <div
@@ -26,12 +33,11 @@ const HeroSectionProducts = () => {
             <div className="relative mx-auto pt-24 pb-24 flex flex-col justify-center">
                 <div className="max-w-[650px] mb-10">
                     <h1 className="text-start text-5xl leading-14 md:text-6xl md:leading-16 xl:text-7xl lg:leading-20 font-semibold text-blueColor mb-0 xl:mb-5">
-                        Let’s turn your idea
-                        into a product
+                        {title}
                     </h1>
 
                     <p className="text-start text-xl xl:mt-6 lg:text-xl xl:text-2xl text-blackColor">
-                        At Codera we help startup founders turn bold ideas into powerful MVP or complete SaaS products. We develop solutions that scale with your business. Focus on growing your vision - we’ll handle the tech.
+                        {text}
                     </p>
                 </div>
 
@@ -51,7 +57,7 @@ const HeroSectionProducts = () => {
                         lg:text-[28px]
                         "
                     >
-                        Get Started Today
+                        {button}
                     </span>
                 </button>
 
@@ -64,4 +70,4 @@ const HeroSectionProducts = () => {
     )
 }
 
-export default HeroSectionProducts
+export default HeroSectionDefault

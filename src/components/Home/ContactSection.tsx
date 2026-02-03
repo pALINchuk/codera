@@ -45,6 +45,7 @@ const ContactSection = () => {
                                         className="w-full text-xl text-blackColor bg-bgColor p-3 rounded-xl resize-none"
                                     />) : (
                                         <input
+                                            key={field.id}
                                             type={field.type}
                                             id={field.id}
                                             name={field.name}

@@ -66,8 +66,11 @@ const Header = () => {
                     onClick={() => setOpen(!open)}
                 >
                     {
-                        Array.from({length: 3}).map(_ => (
-                            <span className="w-7 h-[3px] bg-blackColor rounded-3xl"></span>
+                        Array.from({length: 3}).map((_, index) => (
+                            <span
+                                key={index}
+                                className="w-7 h-[3px] bg-blackColor rounded-3xl"
+                            ></span>
                         ))
                     }
                 </button>
@@ -87,9 +90,11 @@ const Header = () => {
                 </button>
                 <nav className="flex flex-col items-center justify-center h-full gap-6">
                     {links.map(item => (
-                        <div className="border-b text-lightBlueTextColor">
+                        <div
+                            key={item.id}
+                            className="border-b text-lightBlueTextColor"
+                        >
                             <Link
-                                key={item.id}
                                 to={item.link}
                                 onClick={() => setOpen(false)}
                                 className="text-3xl text-lightBlueTextColor"

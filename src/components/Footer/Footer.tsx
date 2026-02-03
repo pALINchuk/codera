@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import codera from "../assets/codera_light.svg";
-import tiktok from "../assets/tiktok_codera.svg"
-import facebook from "../assets/facebook_codera.svg"
-import insta from "../assets/insta_codera.svg"
-import linkedin from "../assets/linkedin_codera.svg"
+import codera from "../../assets/codera_light.svg";
+import tiktok from "../../assets/tiktok_codera.svg"
+import facebook from "../../assets/facebook_codera.svg"
+import insta from "../../assets/insta_codera.svg"
+import linkedin from "../../assets/linkedin_codera.svg"
 
 const links = [
     {
@@ -101,9 +101,11 @@ const Footer = () => {
                         <div className="flex gap-3">
                             {
                                 socials.map(social => (
-                                    <Link to={'#'}>
+                                    <Link
+                                        key={social.id}
+                                        to={'#'}
+                                    >
                                         <img
-                                            key={social.id}
                                             src={social.image}
                                             alt={social.name}
                                             className="h-8 w-auto hover:opacity-70"
